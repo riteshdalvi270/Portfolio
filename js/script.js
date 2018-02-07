@@ -7,4 +7,4 @@ var parseJson = function() {
 }
 
 var obj = parseJson();
-document.getElementById("json").innerHTML = obj.employees[0].firstName + " "+ obj.employees[0].lastName;
+document.getElementById("name").innerHTML = obj.employees[0].firstName + " "+ obj.employees[0].lastName;

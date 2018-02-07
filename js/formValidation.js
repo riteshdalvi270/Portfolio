@@ -1,8 +1,15 @@
 var FormValidation = function () {
     
         var name = document.forms["contact"]["name"].value;
-    
-        function nameValidation(name) {
+
+        nameValidation(name);
+
+        var email = document.forms["contact"]["name"].value;
+
+        emailValidation(email);
+};
+
+var nameValidation = function(name) {
     
             if(name=="") {
                 alert("Enter name, required");
@@ -14,5 +21,9 @@ var FormValidation = function () {
             return true;
         }
 
-        nameValidation(name);
-};
+var emailValidation = function emailValidation(email) {
+    
+                if(email=="") {
+                    alert("Enter email Id, required");
+                }
+    }
